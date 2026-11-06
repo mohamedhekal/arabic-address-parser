@@ -1,0 +1,596 @@
+[
+ {
+  "input": "15 شارع التحرير الدقي الجيزة",
+  "expect": {
+   "normalized": "15 شارع تحرير دقي جيزه",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "الجيزة",
+   "district": "الدقي",
+   "street": "شارع التحرير",
+   "building": "15",
+   "confidence": 0.9
+  }
+ },
+ {
+  "input": "١٥ شارع التحرير، الدقي، الجيزة",
+  "expect": {
+   "normalized": "15 شارع تحرير دقي جيزه",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "الجيزة",
+   "district": "الدقي",
+   "street": "شارع التحرير",
+   "building": "15",
+   "confidence": 0.9
+  }
+ },
+ {
+  "input": "شارع 9 المعادي القاهرة الدور الثالث شقة 12 بجوار مسجد الرحمن",
+  "expect": {
+   "normalized": "شارع 9 معادي قاهره دور ثالث شقه 12 بجوار مسجد رحمن",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "القاهرة",
+   "district": "المعادي",
+   "street": "شارع 9",
+   "floor": 3,
+   "apartment": "12",
+   "landmark": "بجوار مسجد الرحمن",
+   "confidence": 0.85
+  }
+ },
+ {
+  "input": "٢٢ ش مصطفى النحاس، مدينة نصر، 01012345678",
+  "expect": {
+   "normalized": "22 ش مصطفي نحاس مدينه نصر 01012345678",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "القاهرة",
+   "district": "مدينة نصر",
+   "street": "ش مصطفى النحاس",
+   "building": "22",
+   "phone": "01012345678",
+   "confidence": 0.9
+  }
+ },
+ {
+  "input": "محافظة الإسكندرية سموحة شارع فوزي معاذ عمارة 7 الدور الخامس شقة 21 بالقرب من مول سان ستيفانو",
+  "expect": {
+   "normalized": "محافظه اسكندريه سموحه شارع فوزي معاذ عماره 7 دور خامس شقه 21 بالقرب من مول سان ستيفانو",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "الإسكندرية",
+   "district": "سموحة",
+   "street": "شارع فوزي معاذ",
+   "building": "7",
+   "floor": 5,
+   "apartment": "21",
+   "landmark": "بالقرب من مول سان ستيفانو",
+   "confidence": 1.0
+  }
+ },
+ {
+  "input": "مدينة نصر شارع عباس العقاد ٢٥ ص.ب 11371",
+  "expect": {
+   "normalized": "مدينه نصر شارع عباس عقاد 25 ص ب 11371",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "القاهرة",
+   "district": "مدينة نصر",
+   "street": "شارع عباس العقاد",
+   "building": "25",
+   "postal_code": "11371",
+   "confidence": 1.0
+  }
+ },
+ {
+  "input": "شارع الجمهورية - المنصورة - الدقهلية",
+  "expect": {
+   "normalized": "شارع جمهوريه منصوره دقهليه",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "الدقهلية",
+   "city": "المنصورة",
+   "street": "شارع الجمهورية",
+   "confidence": 0.75
+  }
+ },
+ {
+  "input": "ش النصر بنها القليوبية",
+  "expect": {
+   "normalized": "ش نصر بنها قليوبيه",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "القليوبية",
+   "city": "بنها",
+   "street": "ش النصر",
+   "confidence": 0.75
+  }
+ },
+ {
+  "input": "برج القاهرة الزمالك، الدور 4",
+  "expect": {
+   "normalized": "برج قاهره زمالك دور 4",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "القاهرة",
+   "district": "الزمالك",
+   "building": "برج القاهرة",
+   "floor": 4,
+   "confidence": 0.7
+  }
+ },
+ {
+  "input": "ابراج النيل، كورنيش المعادي، القاهره",
+  "expect": {
+   "normalized": "ابراج نيل كورنيش معادي قاهره",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "القاهرة",
+   "street": "كورنيش المعادي",
+   "building": "ابراج النيل",
+   "confidence": 0.7
+  }
+ },
+ {
+  "input": "6 اكتوبر الحي السابع المجاورة الثانية",
+  "expect": {
+   "normalized": "6 اكتوبر حي سابع مجاوره ثانيه",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "الجيزة",
+   "city": "6 أكتوبر",
+   "district": "السابع المجاورة الثانية",
+   "confidence": 0.45
+  }
+ },
+ {
+  "input": "التجمع الخامس شارع التسعين عمارة 12 شقة 4 القاهرة الجديدة",
+  "expect": {
+   "normalized": "تجمع خامس شارع تسعين عماره 12 شقه 4 قاهره جديده",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "القاهرة",
+   "city": "القاهرة الجديدة",
+   "district": "التجمع الخامس",
+   "street": "شارع التسعين",
+   "building": "12",
+   "apartment": "4",
+   "confidence": 1.0
+  }
+ },
+ {
+  "input": "الشيخ زايد الحي الاول عمارة 45 الدور الارضي",
+  "expect": {
+   "normalized": "شيخ زايد حي اول عماره 45 دور ارضي",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "الجيزة",
+   "city": "الشيخ زايد",
+   "district": "الاول",
+   "building": "45",
+   "floor": 0,
+   "confidence": 0.7
+  }
+ },
+ {
+  "input": "شارع سعد زغلول بجانب البنك الاهلي طنطا الغربية",
+  "expect": {
+   "normalized": "شارع سعد زغلول بجانب بنك اهلي طنطا غربيه",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "الغربية",
+   "city": "طنطا",
+   "street": "شارع سعد زغلول",
+   "landmark": "بجانب البنك الاهلي",
+   "confidence": 0.85
+  }
+ },
+ {
+  "input": "عمارة رقم 8 شارع رقم 15 حي المقطم القاهرة",
+  "expect": {
+   "normalized": "عماره رقم 8 شارع رقم 15 حي مقطم قاهره",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "القاهرة",
+   "district": "المقطم",
+   "street": "شارع 15",
+   "building": "8",
+   "confidence": 0.9
+  }
+ },
+ {
+  "input": "منطقة الهرم شارع فيصل الرئيسي بالقرب من محطة المترو الجيزة",
+  "expect": {
+   "normalized": "منطقه هرم شارع فيصل رييسي بالقرب من محطه مترو جيزه",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "الجيزة",
+   "district": "الهرم",
+   "street": "شارع فيصل الرئيسي",
+   "landmark": "بالقرب من محطة المترو",
+   "confidence": 0.85
+  }
+ },
+ {
+  "input": "قسم اول مدينة نصر القاهرة",
+  "expect": {
+   "normalized": "قسم اول مدينه نصر قاهره",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "القاهرة",
+   "district": "مدينة نصر",
+   "confidence": 0.45
+  }
+ },
+ {
+  "input": "القاهرة الدقي",
+  "expect": {
+   "normalized": "قاهره دقي",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "القاهرة",
+   "district": "الدقي",
+   "warnings": [
+    "region_mismatch:الدقي"
+   ],
+   "confidence": 0.45
+  }
+ },
+ {
+  "input": "الجيزة المعادي",
+  "expect": {
+   "normalized": "جيزه معادي",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "الجيزة",
+   "district": "المعادي",
+   "warnings": [
+    "region_mismatch:المعادي"
+   ],
+   "confidence": 0.45
+  }
+ },
+ {
+  "input": "شرم الشيخ خليج نعمة فندق الريتز",
+  "expect": {
+   "normalized": "شرم شيخ خليج نعمه فندق ريتز",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "جنوب سيناء",
+   "city": "شرم الشيخ",
+   "unparsed": [
+    "خليج نعمة فندق الريتز"
+   ],
+   "confidence": 0.25
+  }
+ },
+ {
+  "input": "محطة الرمل شارع صفية زغلول الاسكندرية",
+  "expect": {
+   "normalized": "محطه رمل شارع صفيه زغلول اسكندريه",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "الإسكندرية",
+   "district": "محطة الرمل",
+   "street": "شارع صفية زغلول",
+   "confidence": 0.75
+  }
+ },
+ {
+  "input": "الغردقة الدهار شارع سيجا فيلا 10 البحر الاحمر",
+  "expect": {
+   "normalized": "غردقه دهار شارع سيجا فيلا 10 بحر احمر",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "البحر الأحمر",
+   "city": "الغردقة",
+   "street": "شارع سيجا",
+   "building": "10",
+   "unparsed": [
+    "الدهار"
+   ],
+   "confidence": 0.85
+  }
+ },
+ {
+  "input": "15 share3 el tahrir el dokki el giza",
+  "expect": {
+   "normalized": "15 share3 tahrir dokki giza",
+   "language": "en",
+   "country_code": "EG",
+   "region": "الجيزة",
+   "district": "الدقي",
+   "street": "share3 el tahrir",
+   "building": "15",
+   "confidence": 0.9
+  }
+ },
+ {
+  "input": "Flat 12, Floor 3, 15 Tahrir St, Dokki, Giza, Egypt",
+  "expect": {
+   "normalized": "flat 12 floor 3 15 tahrir st dokki giza egypt",
+   "language": "en",
+   "country_code": "EG",
+   "region": "الجيزة",
+   "district": "الدقي",
+   "street": "Tahrir St",
+   "building": "15",
+   "floor": 3,
+   "apartment": "12",
+   "confidence": 1.0
+  }
+ },
+ {
+  "input": "26th of July Road, Mohandessin, Giza",
+  "expect": {
+   "normalized": "26th of july road mohandessin giza",
+   "language": "en",
+   "country_code": "EG",
+   "region": "الجيزة",
+   "district": "المهندسين",
+   "street": "26th of July Road",
+   "confidence": 0.75
+  }
+ },
+ {
+  "input": "Building 5, Sheikh Zayed, Giza",
+  "expect": {
+   "normalized": "building 5 sheikh zayed giza",
+   "language": "en",
+   "country_code": "EG",
+   "region": "الجيزة",
+   "city": "الشيخ زايد",
+   "building": "5",
+   "confidence": 0.6
+  }
+ },
+ {
+  "input": "12 ma3adi cairo",
+  "expect": {
+   "normalized": "12 ma3adi cairo",
+   "language": "en",
+   "country_code": "EG",
+   "region": "القاهرة",
+   "district": "المعادي",
+   "unparsed": [
+    "12"
+   ],
+   "confidence": 0.4
+  }
+ },
+ {
+  "input": "villa 22 new cairo 5th settlement",
+  "expect": {
+   "normalized": "villa 22 new cairo 5th settlement",
+   "language": "en",
+   "country_code": "EG",
+   "region": "القاهرة",
+   "city": "القاهرة الجديدة",
+   "district": "التجمع الخامس",
+   "building": "22",
+   "confidence": 0.6
+  }
+ },
+ {
+  "input": "حي النخيل، شارع الأمير سلطان، الرياض، المملكة العربية السعودية، الرمز البريدي 12345",
+  "expect": {
+   "normalized": "حي نخيل شارع امير سلطان رياض مملكه عربيه سعوديه رمز بريدي 12345",
+   "language": "ar",
+   "country_code": "SA",
+   "region": "الرياض",
+   "district": "النخيل",
+   "street": "شارع الأمير سلطان",
+   "postal_code": "12345",
+   "confidence": 0.85
+  }
+ },
+ {
+  "input": "RRRD2929 الرياض",
+  "expect": {
+   "normalized": "rrd2929 رياض",
+   "language": "mixed",
+   "country_code": "SA",
+   "region": "الرياض",
+   "short_address": "RRRD2929",
+   "confidence": 0.25
+  }
+ },
+ {
+  "input": "حي العليا شارع التحلية جدة",
+  "expect": {
+   "normalized": "حي عليا شارع تحليه جده",
+   "language": "ar",
+   "country_code": "SA",
+   "region": "مكة المكرمة",
+   "city": "جدة",
+   "district": "العليا",
+   "street": "شارع التحلية",
+   "confidence": 0.75
+  }
+ },
+ {
+  "input": "قطعة 3 شارع 5 جادة 2 منزل 10 السالمية الكويت",
+  "expect": {
+   "normalized": "قطعه 3 شارع 5 جاده 2 منزل 10 سالميه كويت",
+   "language": "ar",
+   "country_code": "KW",
+   "region": "حولي",
+   "district": "السالمية",
+   "street": "شارع 5",
+   "secondary_street": "جادة 2",
+   "building": "10",
+   "block": "3",
+   "confidence": 1.0
+  }
+ },
+ {
+  "input": "مبنى 123 طريق 456 مجمع 789 المنامة البحرين",
+  "expect": {
+   "normalized": "مبني 123 طريق 456 مجمع 789 منامه بحرين",
+   "language": "ar",
+   "country_code": "BH",
+   "region": "المنامة",
+   "street": "طريق 456",
+   "building": "123",
+   "block": "789",
+   "confidence": 0.8
+  }
+ },
+ {
+  "input": "Building 12 Road 5 Block 7 Manama",
+  "expect": {
+   "normalized": "building 12 road 5 block 7 manama",
+   "language": "en",
+   "country_code": "BH",
+   "region": "المنامة",
+   "street": "Road 5",
+   "building": "12",
+   "block": "7",
+   "confidence": 0.8
+  }
+ },
+ {
+  "input": "دبي ديرة شارع الرقة بناية 5",
+  "expect": {
+   "normalized": "دبي ديره شارع رقه بنايه 5",
+   "language": "ar",
+   "country_code": "AE",
+   "region": "دبي",
+   "district": "ديرة",
+   "street": "شارع الرقة",
+   "building": "5",
+   "confidence": 0.9
+  }
+ },
+ {
+  "input": "دبي مردف شارع 12 فيلا 7 الامارات",
+  "expect": {
+   "normalized": "دبي مردف شارع 12 فيلا 7 امارات",
+   "language": "ar",
+   "country_code": "AE",
+   "region": "دبي",
+   "district": "مردف",
+   "street": "شارع 12",
+   "building": "7",
+   "confidence": 0.9
+  }
+ },
+ {
+  "input": "Al Khalidiyah, Abu Dhabi, UAE",
+  "expect": {
+   "normalized": "khalidiyah abu dhabi uae",
+   "language": "en",
+   "country_code": "AE",
+   "region": "أبوظبي",
+   "district": "الخالدية",
+   "confidence": 0.45
+  }
+ },
+ {
+  "input": "الدوحة اللؤلؤة برج 5 الدور 12 شقة 1203",
+  "expect": {
+   "normalized": "دوحه لولوه برج 5 دور 12 شقه 1203",
+   "language": "ar",
+   "country_code": "QA",
+   "region": "الدوحة",
+   "district": "اللؤلؤة",
+   "building": "5",
+   "floor": 12,
+   "apartment": "1203",
+   "confidence": 0.7
+  }
+ },
+ {
+  "input": "مسقط السيب شارع الجامعة",
+  "expect": {
+   "normalized": "مسقط سيب شارع جامعه",
+   "language": "ar",
+   "country_code": "OM",
+   "region": "مسقط",
+   "city": "السيب",
+   "street": "شارع الجامعة",
+   "confidence": 0.75
+  }
+ },
+ {
+  "input": "",
+  "expect": {
+   "language": "unknown",
+   "confidence": 0.0
+  }
+ },
+ {
+  "input": "   ",
+  "expect": {
+   "language": "unknown",
+   "confidence": 0.0
+  }
+ },
+ {
+  "input": "ش.التحرير 15",
+  "expect": {
+   "normalized": "ش تحرير 15",
+   "language": "ar",
+   "street": "ش التحرير",
+   "building": "15",
+   "confidence": 0.45
+  }
+ },
+ {
+  "input": "شارع التحرير\nالدقي\nالجيزة",
+  "expect": {
+   "normalized": "شارع تحرير دقي جيزه",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "الجيزة",
+   "district": "الدقي",
+   "street": "شارع التحرير",
+   "confidence": 0.75
+  }
+ },
+ {
+  "input": "عمارة 5أ شارع الجمهورية",
+  "expect": {
+   "normalized": "عماره 5ا شارع جمهوريه",
+   "language": "ar",
+   "street": "شارع الجمهورية",
+   "building": "5أ",
+   "confidence": 0.45
+  }
+ },
+ {
+  "input": "شارع 26 يوليو الزمالك",
+  "expect": {
+   "normalized": "شارع 26 يوليو زمالك",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "القاهرة",
+   "district": "الزمالك",
+   "street": "شارع 26 يوليو",
+   "confidence": 0.75
+  }
+ },
+ {
+  "input": "الاسكندريه",
+  "expect": {
+   "normalized": "اسكندريه",
+   "language": "ar",
+   "country_code": "EG",
+   "region": "الإسكندرية",
+   "confidence": 0.25
+  }
+ },
+ {
+  "input": "tel 01234567890 cairo",
+  "expect": {
+   "normalized": "tel 01234567890 cairo",
+   "language": "en",
+   "country_code": "EG",
+   "region": "القاهرة",
+   "phone": "01234567890",
+   "confidence": 0.25
+  }
+ }
+]

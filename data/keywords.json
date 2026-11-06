@@ -1,0 +1,19 @@
+{
+  "_comment": "Natural spellings are fine: every entry is normalized with the same key() function the parser uses.",
+  "street": ["شارع", "ش", "طريق", "ميدان", "كورنيش", "محور", "كوبري", "كوبرى", "حارة", "زقاق", "ممر", "جادة", "جاده", "street", "st", "road", "rd", "avenue", "ave", "square", "sq", "sh", "sharia", "shari3", "share3", "shar3", "tare2", "midan", "meidan"],
+  "building": ["عمارة", "بناية", "مبنى", "برج", "ابراج", "فيلا", "عقار", "منزل", "building", "bldg", "bld", "tower", "villa", "house", "emara", "3emara"],
+  "street_suffix": ["street", "st", "road", "rd", "avenue", "ave", "square", "sq"],
+  "floor": ["دور", "طابق", "floor", "fl", "flr", "role"],
+  "apartment": ["شقة", "وحدة", "مكتب", "apt", "apartment", "flat", "unit", "office", "shaqa", "sha2a"],
+  "block": ["قطعة", "مجمع", "بلوك", "block", "blk"],
+  "district": ["حي", "منطقة", "ضاحية", "قسم", "مركز", "كمبوند", "compound", "قرية", "عزبة", "نجع", "district", "area", "zone", "neighborhood"],
+  "city": ["مدينة", "city"],
+  "landmark": ["بجوار", "بجانب", "جنب", "بجنب", "امام", "قدام", "مقابل", "خلف", "وراء", "ورا", "بالقرب", "قريب", "عند", "بين", "تقاطع", "بعد", "near", "behind", "opposite", "next", "beside"],
+  "noise": ["tel", "phone", "mobile", "mob", "موبايل", "تليفون", "تلفون", "هاتف", "جوال", "محمول", "واتس", "واتساب", "محافظة", "governorate", "province", "emirate", "امارة", "دولة", "country", "state", "جمهورية"],
+  "number_word": ["رقم", "no", "number"],
+  "skip_after_landmark": ["من", "of", "to"],
+  "ordinals": {
+    "اول": 1, "اولي": 1, "ثاني": 2, "ثالث": 3, "رابع": 4, "خامس": 5, "سادس": 6, "سابع": 7, "ثامن": 8, "تاسع": 9, "عاشر": 10,
+    "ارضي": 0, "الارضي": 0, "ground": 0, "first": 1, "second": 2, "third": 3, "fourth": 4, "fifth": 5
+  }
+}

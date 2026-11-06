@@ -1,0 +1,380 @@
+# Gazetteer source of truth. Edited by hand; compiled into both packages by scripts/sync_data.py.
+#
+# C|code|name_ar|name_en|aliases(;-separated)
+# R|id|country|name_ar|name_en|aliases           (region: governorate / emirate / province)
+# P|type|region_id|name_ar|name_en|aliases        (type: city | district)
+#
+# The canonical Arabic and English names are added as aliases automatically.
+# Aliases may use Franco-Arabic ("Arabizi") spellings. Every alias must be unique across the file
+# (python/tests checks this), so skip names that clash instead of guessing.
+# All entries are public geographic facts written for this project.
+
+# ---------------------------------------------------------------- countries
+C|EG|مصر|Egypt|جمهورية مصر العربية;masr;misr;arab republic of egypt;eg;egy
+C|SA|السعودية|Saudi Arabia|المملكة العربية السعودية;المملكة السعودية;ksa;saudi;ksa riyadh
+C|AE|الإمارات|United Arab Emirates|الامارات العربية المتحدة;دولة الامارات;uae;emirates;u a e
+C|KW|الكويت|Kuwait|دولة الكويت;kuwait state
+C|QA|قطر|Qatar|دولة قطر;qatar state
+C|BH|البحرين|Bahrain|مملكة البحرين
+C|OM|عُمان|Oman|سلطنة عمان;oman sultanate
+
+# ---------------------------------------------------------------- Egypt: governorates
+R|EG-C|EG|القاهرة|Cairo|el cairo;al qahira;el qahera;qahira
+R|EG-GZ|EG|الجيزة|Giza|el giza;geeza;el geeza;gizeh
+R|EG-ALX|EG|الإسكندرية|Alexandria|اسكندرية;eskandareya;eskandariya;eskendereya;eskenderiya;alex;iskandariya
+R|EG-KB|EG|القليوبية|Qalyubia|qalyoubia;qaliubiya;kalyubia
+R|EG-SHR|EG|الشرقية|Sharqia|sharkia;el sharqia
+R|EG-DK|EG|الدقهلية|Dakahlia|dakahlieh;dakahliya
+R|EG-GH|EG|الغربية|Gharbia|gharbeia;gharbiya
+R|EG-MNF|EG|المنوفية|Monufia|menoufia;menofia;monofia
+R|EG-BH|EG|البحيرة|Beheira|behira;el beheira
+R|EG-KFS|EG|كفر الشيخ|Kafr El Sheikh|kafr elsheikh;kafr el sheikh;kafr al sheikh
+R|EG-DT|EG|دمياط|Damietta|domyat;dumyat
+R|EG-PTS|EG|بورسعيد|Port Said|portsaid;port saeed;bor said
+R|EG-IS|EG|الإسماعيلية|Ismailia|esmailia;esma3elia;ismaileya;ismailiya
+R|EG-SUZ|EG|السويس|Suez|swez;el suez
+R|EG-SIN|EG|شمال سيناء|North Sinai|north sinai governorate
+R|EG-JS|EG|جنوب سيناء|South Sinai|south sinai governorate
+R|EG-FYM|EG|الفيوم|Faiyum|fayoum;fayum;el fayoum
+R|EG-BNS|EG|بني سويف|Beni Suef|bani sweif;beni sweif;bani suwayf;beni souef
+R|EG-MN|EG|المنيا|Minya|menya;el minya;el menia
+R|EG-AST|EG|أسيوط|Asyut|assiut;asyout;assuit
+R|EG-SHG|EG|سوهاج|Sohag|suhag;sohag city
+R|EG-KN|EG|قنا|Qena|kena;qena city
+R|EG-LX|EG|الأقصر|Luxor|loxor;el uqsur
+R|EG-ASN|EG|أسوان|Aswan|aswan city;aswan egypt
+R|EG-BA|EG|البحر الأحمر|Red Sea|red sea governorate
+R|EG-WAD|EG|الوادي الجديد|New Valley|wadi el gedid;el wadi el gedid
+R|EG-MT|EG|مطروح|Matrouh|matruh;matrouh governorate
+
+# ---------------------------------------------------------------- Egypt: Cairo governorate
+P|district|EG-C|مدينة نصر|Nasr City|nasr city;madinet nasr;madinat nasr;madent nasr;مدينه نصر
+P|district|EG-C|مصر الجديدة|Heliopolis|masr el gedida;misr el gedida;masr elgedida
+P|district|EG-C|المعادي|Maadi|ma3adi;ma3ady;el maadi;elma3ady
+P|district|EG-C|التجمع الخامس|Fifth Settlement|5th settlement;tagamo3 el 5ames;tagamo3 5;tagamoa el khames;التجمع5
+P|district|EG-C|التجمع الأول|First Settlement|1st settlement
+P|district|EG-C|التجمع الثالث|Third Settlement|3rd settlement
+P|city|EG-C|القاهرة الجديدة|New Cairo|newcairo;el qahera el gedida;new cairo city
+P|district|EG-C|الرحاب|Rehab City|el rehab;el re7ab;rehab
+P|city|EG-C|مدينتي|Madinaty|madinty
+P|city|EG-C|الشروق|Shorouk|el shorouk;elshorouk;shorouq;shorouk city;الشروق
+P|city|EG-C|مدينة بدر|Badr City|badr city;madinet badr
+P|city|EG-C|العاصمة الإدارية الجديدة|New Administrative Capital|new capital;administrative capital;العاصمة الادارية
+P|district|EG-C|المقطم|Mokattam|mokatam;mo2attam
+P|district|EG-C|حلوان|Helwan|7elwan;el helwan
+P|district|EG-C|عين شمس|Ain Shams|3ein shams;3ain shams;ain shams
+P|district|EG-C|المطرية|Mataria|el matarya;matareya
+P|district|EG-C|الزيتون|Zeitoun|zaytoun;el zeitoun
+P|district|EG-C|شبرا|Shubra|shobra;shoubra
+P|district|EG-C|الزمالك|Zamalek|el zamalek
+P|district|EG-C|وسط البلد|Downtown|downtown cairo;wust el balad;west el balad
+P|district|EG-C|جاردن سيتي|Garden City|gardan city
+P|district|EG-C|العباسية|Abbasiya|abbassia;el abbasiya
+P|district|EG-C|السيدة زينب|Sayeda Zeinab|sayeda zeinab;el sayeda zeinab
+P|district|EG-C|الدرب الأحمر|Darb El Ahmar|darb el ahmar
+P|district|EG-C|الخليفة|Khalifa|el khalifa
+P|district|EG-C|مصر القديمة|Old Cairo|masr el adima;misr el adeema;old cairo
+P|district|EG-C|المرج|Marg|el marg
+P|district|EG-C|النزهة|Nozha|el nozha;nozha cairo
+P|district|EG-C|حدائق القبة|Hadayek El Kobba|hadayek el kobba
+P|district|EG-C|الشرابية|Sharabiya|el sharabeya
+P|district|EG-C|المعصرة|Maasara|el maasara
+P|district|EG-C|دار السلام|Dar El Salam|dar el salam
+P|district|EG-C|البساتين|Basatin|el basatin
+P|district|EG-C|15 مايو|15 May City|15 may;15th of may
+P|district|EG-C|القطامية|Katameya|el katameya;katameya heights
+P|district|EG-C|التبين|Tebbin|el tebbin
+P|district|EG-C|العتبة|Ataba|el ataba
+P|district|EG-C|الأزبكية|Azbakeya|el azbakeya
+P|district|EG-C|روض الفرج|Rod El Farag|rod el farag
+
+# ---------------------------------------------------------------- Egypt: Giza
+P|district|EG-GZ|الدقي|Dokki|dokki;eldokki;el dokki;ad doqqi
+P|district|EG-GZ|المهندسين|Mohandessin|mohandeseen;mohandisin;elmohandeseen;el mohandesin
+P|district|EG-GZ|العجوزة|Agouza|3agouza;el agouza
+P|district|EG-GZ|الهرم|Haram|7aram;el haram;elharam;al haram;el7aram;pyramids
+P|district|EG-GZ|فيصل|Faisal|faysal;fysal
+P|city|EG-GZ|6 أكتوبر|6th of October City|6 october;6th of october;6 october city;6th october;madinet 6 october;مدينة 6 اكتوبر;مدينة السادس من اكتوبر;السادس من اكتوبر;سادس اكتوبر
+P|city|EG-GZ|الشيخ زايد|Sheikh Zayed|sheikh zayed city;el sheikh zayed;shikh zayed;شيخ زايد
+P|district|EG-GZ|حدائق الأهرام|Hadayek El Ahram|hadayek el ahram;7adayek el ahram
+P|district|EG-GZ|حدائق أكتوبر|Hadayek October|hadayek october
+P|district|EG-GZ|إمبابة|Imbaba|embaba
+P|district|EG-GZ|الوراق|Warraq|el warraq
+P|district|EG-GZ|كرداسة|Kerdasa|kirdasa
+P|district|EG-GZ|البدرشين|Badrashin|badrashein
+P|district|EG-GZ|الحوامدية|Hawamdeya|el hawamdeya
+P|district|EG-GZ|أبو النمرس|Abu El Nomros|abu el nomros
+P|district|EG-GZ|بولاق الدكرور|Bulaq El Dakrour|bolaq el dakrour;boulaq dakrour
+P|district|EG-GZ|الطالبية|Talbia|el talbeya
+P|district|EG-GZ|أوسيم|Awsim|ausim
+
+# ---------------------------------------------------------------- Egypt: Alexandria
+P|district|EG-ALX|سموحة|Smouha|smo7a;smou7a;semouha;smoha;semoha;smooha;سموحا
+P|district|EG-ALX|سيدي بشر|Sidi Bishr|sidibishr;sedy beshr;sidi beshr;سيدى بشر
+P|district|EG-ALX|سيدي جابر|Sidi Gaber|sidi gabir;سيدى جابر
+P|district|EG-ALX|العجمي|Agamy|3agamy;el agamy;agami
+P|district|EG-ALX|المندرة|Mandara|el mandara
+P|district|EG-ALX|العصافرة|Asafra|el asafra
+P|district|EG-ALX|ستانلي|Stanley|stanly
+P|district|EG-ALX|سبورتنج|Sporting|sporting club
+P|district|EG-ALX|جليم|Gleem|glim
+P|district|EG-ALX|رشدي|Roushdy|rushdy;roshdy
+P|city|EG-ALX|برج العرب|Borg El Arab|burg el arab;borg alarab
+P|city|EG-ALX|برج العرب الجديدة|New Borg El Arab|new borg el arab
+P|district|EG-ALX|المنتزه|Montaza|montazah;el montaza
+P|district|EG-ALX|ميامي|Miami|miami alex
+P|district|EG-ALX|لوران|Laurent|louran
+P|district|EG-ALX|كليوباترا|Cleopatra|kleopatra
+P|district|EG-ALX|محطة الرمل|Raml Station|mahatet el raml;raml station
+P|district|EG-ALX|الشاطبي|Shatby|el shatby
+P|district|EG-ALX|الإبراهيمية|Ibrahimia|el ibrahimeya
+P|district|EG-ALX|كامب شيزار|Camp Caesar|camp shezar;camp cesar
+P|district|EG-ALX|الأزاريطة|Azarita|el azarita
+P|district|EG-ALX|الورديان|Wardian|el wardian
+P|district|EG-ALX|محرم بك|Moharam Bek|moharram bek
+P|district|EG-ALX|كرموز|Karmouz|karmoz
+P|district|EG-ALX|بحري|Bahary|bahri alex
+P|district|EG-ALX|الدخيلة|Dekheila|el dekheila
+P|district|EG-ALX|العامرية|Amreya|el amreya
+
+# ---------------------------------------------------------------- Egypt: Delta and canal
+P|city|EG-KB|بنها|Benha|banha
+P|city|EG-KB|شبرا الخيمة|Shubra El Kheima|shobra el kheima;shubra el khayma;shobra el khayma
+P|city|EG-KB|قليوب|Qalyub|kalyub
+P|city|EG-KB|الخانكة|Khanka|el khanka
+P|city|EG-KB|القناطر الخيرية|Qanater El Khayreya|el qanater
+P|city|EG-KB|الخصوص|Khosous|el khosous
+P|city|EG-KB|العبور|Obour|3obour;el obour;el 3obour;obour city
+P|city|EG-SHR|الزقازيق|Zagazig|zagazeeg
+P|city|EG-SHR|العاشر من رمضان|10th of Ramadan|10th ramadan;10 of ramadan;10 ramadan city;el 3asher men ramadan
+P|city|EG-SHR|بلبيس|Bilbeis|belbeis
+P|city|EG-SHR|ههيا|Hihya|hehia
+P|city|EG-SHR|أبو حماد|Abu Hammad|abu hamad
+P|city|EG-SHR|منيا القمح|Minya Al Qamh|mynia el qamh
+P|city|EG-SHR|فاقوس|Faqous|fakous
+P|city|EG-DK|المنصورة|Mansoura|mansura;el mansoura;elmansoura
+P|city|EG-DK|ميت غمر|Mit Ghamr|mit ghamr
+P|city|EG-DK|طلخا|Talkha|talkha city
+P|city|EG-DK|السنبلاوين|Sinbellawein|senbellawein
+P|city|EG-DK|دكرنس|Dekernes|dikirnis
+P|city|EG-DK|بلقاس|Belqas|bilqas
+P|city|EG-GH|طنطا|Tanta|tanta city
+P|city|EG-GH|المحلة الكبرى|Mahalla El Kubra|mahalla el kubra;el mahalla el kubra;el mahalla
+P|city|EG-GH|كفر الزيات|Kafr El Zayat|kafr el zayat
+P|city|EG-GH|زفتى|Zefta|zifta
+P|city|EG-GH|سمنود|Samannoud|semennoud
+P|city|EG-GH|بسيون|Basyoun|basyon
+P|city|EG-MNF|شبين الكوم|Shibin El Kom|shebin el kom
+P|city|EG-MNF|مدينة السادات|Sadat City|sadat city;madinet el sadat;السادات
+P|city|EG-MNF|منوف|Menouf|menuf
+P|city|EG-MNF|أشمون|Ashmoun|ashmon
+P|city|EG-MNF|قويسنا|Quesna|quwaisna
+P|city|EG-MNF|الباجور|Bagour|el bagour
+P|city|EG-BH|دمنهور|Damanhour|damanhur
+P|city|EG-BH|كفر الدوار|Kafr El Dawwar|kafr el dawar
+P|city|EG-BH|أبو حمص|Abu Hummus|abu hommos
+P|city|EG-BH|إدكو|Edko|idku
+P|city|EG-BH|رشيد|Rashid|rosetta
+P|city|EG-BH|الدلنجات|Delengat|el delengat
+P|city|EG-BH|كوم حمادة|Kom Hamada|kom hamada
+P|city|EG-BH|وادي النطرون|Wadi El Natrun|wadi el natroun
+P|city|EG-KFS|دسوق|Desouk|disouq
+P|city|EG-KFS|بيلا|Beyla|bila
+P|city|EG-KFS|فوه|Fuwwah|fowa
+P|city|EG-KFS|مطوبس|Metoubes|mutubis
+P|city|EG-DT|دمياط الجديدة|New Damietta|new damietta;damietta el gedida
+P|city|EG-DT|رأس البر|Ras El Bar|ras el bar
+P|city|EG-DT|فارسكور|Faraskour|fariskur
+P|city|EG-DT|كفر سعد|Kafr Saad|kafr saad
+P|city|EG-PTS|بور فؤاد|Port Fouad|port fuad;bor fouad;بورفؤاد
+P|city|EG-IS|القنطرة غرب|Qantara West|el qantara gharb
+P|city|EG-IS|فايد|Fayed|fayid
+P|city|EG-IS|التل الكبير|Tell El Kebir|tel el kebir
+P|city|EG-IS|القصاصين|Qassasin|el qassasin
+P|city|EG-SUZ|العين السخنة|Ain Sokhna|ain sokhna;3ain sokhna;el sokhna;sokhna
+P|city|EG-SUZ|الجناين|Ganayen|el ganayen
+
+# ---------------------------------------------------------------- Egypt: Sinai and Red Sea
+P|city|EG-JS|شرم الشيخ|Sharm El Sheikh|sharm el sheik;sharm elsheikh;sharm el shaikh;sharm
+P|city|EG-JS|دهب|Dahab|da7ab
+P|city|EG-JS|نويبع|Nuweiba|nweiba
+P|city|EG-JS|طابا|Taba|taba city
+P|city|EG-JS|سانت كاترين|Saint Catherine|st catherine;saint catherine
+P|city|EG-JS|رأس سدر|Ras Sudr|ras sedr
+P|city|EG-SIN|العريش|Arish|el arish;al arish
+P|city|EG-SIN|رفح|Rafah|rafah egypt
+P|city|EG-SIN|الشيخ زويد|Sheikh Zuweid|sheikh zowaid
+P|city|EG-SIN|بئر العبد|Bir El Abd|bir el abd
+P|city|EG-BA|الغردقة|Hurghada|hurgada;ghardaqa;el ghardaka
+P|city|EG-BA|سفاجا|Safaga|safaga city
+P|city|EG-BA|القصير|Quseir|el quseir;el qoseir
+P|city|EG-BA|مرسى علم|Marsa Alam|marsa 3alam;marsa alam
+P|city|EG-BA|رأس غارب|Ras Ghareb|ras gharib
+P|city|EG-BA|الجونة|El Gouna|gouna;elgouna
+P|city|EG-BA|الشلاتين|Shalateen|shalatin
+P|city|EG-BA|حلايب|Halaib|halayeb
+
+# ---------------------------------------------------------------- Egypt: Upper Egypt
+P|city|EG-FYM|سنورس|Sinnuris|snores
+P|city|EG-FYM|طامية|Tamiya|tamia
+P|city|EG-FYM|إبشواي|Ibsheway|abshway
+P|city|EG-FYM|إطسا|Itsa|etsa
+P|city|EG-BNS|الواسطى|Wasta|el wasta
+P|city|EG-BNS|ببا|Beba|bebaa
+P|city|EG-BNS|الفشن|Fashn|el fashn
+P|city|EG-BNS|سمسطا|Samasta|sumusta
+P|city|EG-BNS|إهناسيا|Ihnasya|ehnasia
+P|city|EG-MN|ملوي|Mallawi|mallawy
+P|city|EG-MN|مغاغة|Maghagha|maghaghah
+P|city|EG-MN|بني مزار|Bani Mazar|beni mazar
+P|city|EG-MN|سمالوط|Samalut|samalot
+P|city|EG-MN|أبو قرقاص|Abu Qurqas|abou korkas
+P|city|EG-MN|دير مواس|Deir Mawas|dayr mawas
+P|city|EG-MN|مطاي|Matai|mattay
+P|city|EG-MN|العدوة|Adwa|el edwa
+P|city|EG-AST|ديروط|Dairut|dayrout
+P|city|EG-AST|القوصية|Quseyya|el qusiya
+P|city|EG-AST|منفلوط|Manfalut|manfalot
+P|city|EG-AST|أبنوب|Abnub|abnoub
+P|city|EG-AST|أبوتيج|Abu Tig|abu teeg
+P|city|EG-AST|صدفا|Sedfa|sidfa
+P|city|EG-AST|الغنايم|Ghanayem|el ghanayem
+P|city|EG-AST|البداري|Badari|el badari
+P|city|EG-SHG|جرجا|Girga|gerga
+P|city|EG-SHG|أخميم|Akhmim|akhmeem
+P|city|EG-SHG|طما|Tima|tema
+P|city|EG-SHG|طهطا|Tahta|tahta city
+P|city|EG-SHG|المراغة|Maragha|el maragha
+P|city|EG-SHG|البلينا|Balyana|el balyana
+P|city|EG-SHG|ساقلتة|Saqulta|sakulta
+P|city|EG-SHG|جهينة|Juhayna|guhina
+P|city|EG-KN|نجع حمادي|Nag Hammadi|naga hamady;nag hamadi
+P|city|EG-KN|قوص|Qus|qous
+P|city|EG-KN|دشنا|Dishna|deshna
+P|city|EG-KN|أبو تشت|Abu Tesht|abu tesht
+P|city|EG-KN|فرشوط|Farshut|farshout
+P|city|EG-KN|نقادة|Naqada|naqada city
+P|city|EG-KN|قفط|Qift|koft
+P|city|EG-LX|أرمنت|Armant|armant city
+P|city|EG-LX|إسنا|Esna|isna
+P|city|EG-LX|البياضية|Bayadiya|el bayadeya
+P|city|EG-LX|الزينية|Zeiniya|el zenia
+P|city|EG-ASN|إدفو|Edfu|idfu
+P|city|EG-ASN|كوم أمبو|Kom Ombo|kom ombo
+P|city|EG-ASN|دراو|Daraw|darau
+P|city|EG-ASN|نصر النوبة|Nasr El Nuba|nasr el nuba
+P|city|EG-ASN|أبو سمبل|Abu Simbel|abu simbel
+P|city|EG-ASN|كلابشة|Kalabsha|kalabsha city
+P|city|EG-WAD|الخارجة|Kharga|el kharga
+P|city|EG-WAD|الداخلة|Dakhla|el dakhla
+P|city|EG-WAD|الفرافرة|Farafra|el farafra
+P|city|EG-WAD|باريس|Paris Oasis|baris
+P|city|EG-WAD|بلاط|Balat|balat dakhla
+
+# ---------------------------------------------------------------- Egypt: North coast
+P|city|EG-MT|مرسى مطروح|Marsa Matrouh|marsa matruh;marsa matrouh;mersa matruh
+P|city|EG-MT|العلمين|El Alamein|al alamein;alamein
+P|city|EG-MT|العلمين الجديدة|New Alamein|new alamein
+P|city|EG-MT|الضبعة|Dabaa|el dabaa
+P|city|EG-MT|سيدي براني|Sidi Barrani|sidi barani
+P|city|EG-MT|السلوم|Salloum|el sallum
+P|city|EG-MT|سيوة|Siwa|siwa oasis
+
+# ---------------------------------------------------------------- Saudi Arabia
+R|SA-01|SA|الرياض|Riyadh|riyadh region;منطقة الرياض;ar riyadh
+R|SA-02|SA|مكة المكرمة|Makkah|mecca;makkah region;makka;مكه
+R|SA-03|SA|المدينة المنورة|Madinah|medina;madina;al madinah
+R|SA-04|SA|المنطقة الشرقية|Eastern Province|eastern province;eastern region
+R|SA-05|SA|القصيم|Qassim|al qassim;qasim
+R|SA-06|SA|حائل|Hail|hayil;haael
+R|SA-07|SA|تبوك|Tabuk|tabouk
+R|SA-08|SA|الحدود الشمالية|Northern Borders|northern borders region
+R|SA-09|SA|جازان|Jazan|jizan;gizan
+R|SA-10|SA|نجران|Najran|najran region
+R|SA-11|SA|الباحة|Al Bahah|al baha;baha
+R|SA-12|SA|الجوف|Al Jawf|al jouf;jouf
+R|SA-14|SA|عسير|Asir|aseer
+P|city|SA-02|جدة|Jeddah|jedda;jiddah;jeddah city;جده
+P|city|SA-02|الطائف|Taif|al taif;taef
+P|city|SA-03|ينبع|Yanbu|yanbu city
+P|city|SA-04|الدمام|Dammam|dammam city;al dammam
+P|city|SA-04|الخبر|Khobar|al khobar;alkhobar
+P|city|SA-04|الظهران|Dhahran|al dhahran
+P|city|SA-04|الجبيل|Jubail|al jubail
+P|city|SA-04|الأحساء|Al Ahsa|al hasa;hofuf;الهفوف
+P|city|SA-04|القطيف|Qatif|al qatif
+P|city|SA-05|بريدة|Buraidah|buraydah
+P|city|SA-05|عنيزة|Unaizah|unayzah
+P|city|SA-14|أبها|Abha|abha city
+P|city|SA-14|خميس مشيط|Khamis Mushait|khamis mushayt
+
+# ---------------------------------------------------------------- United Arab Emirates
+R|AE-AZ|AE|أبوظبي|Abu Dhabi|abu dhabi;abudhabi;ابو ظبي;emirate of abu dhabi
+R|AE-DU|AE|دبي|Dubai|dubayy;emirate of dubai
+R|AE-SH|AE|الشارقة|Sharjah|sharja;al sharjah
+R|AE-AJ|AE|عجمان|Ajman|ajman city
+R|AE-UQ|AE|أم القيوين|Umm Al Quwain|umm al quwain;uaq;ام القيوين
+R|AE-RK|AE|رأس الخيمة|Ras Al Khaimah|ras al khaimah;rak;ras alkhaimah;راس الخيمة
+R|AE-FU|AE|الفجيرة|Fujairah|fujayrah;al fujairah
+P|city|AE-AZ|العين|Al Ain|al ain;alain
+P|district|AE-DU|ديرة|Deira|deira dubai
+P|district|AE-DU|بر دبي|Bur Dubai|bur dubai;burdubai
+P|district|AE-DU|جميرا|Jumeirah|jumeira
+P|district|AE-DU|الراشدية|Rashidiya|al rashidiya
+P|district|AE-DU|مردف|Mirdif|mirdiff
+P|district|AE-DU|الخليج التجاري|Business Bay|business bay
+P|district|AE-DU|مرسى دبي|Dubai Marina|dubai marina
+P|district|AE-DU|القوز|Al Quoz|al quoz
+P|district|AE-AZ|جزيرة الريم|Al Reem Island|reem island;al reem
+P|district|AE-AZ|الخالدية|Khalidiyah|al khalidiyah
+P|district|AE-SH|القاسمية|Al Qasimia|al qasimia
+P|district|AE-SH|النهدة|Al Nahda|nahda sharjah
+
+# ---------------------------------------------------------------- Kuwait
+R|KW-KU|KW|محافظة العاصمة|Capital Governorate|kuwait city;مدينة الكويت;al asimah;capital governorate kuwait
+R|KW-HA|KW|حولي|Hawalli|hawally;hawalli governorate
+R|KW-FA|KW|الفروانية|Farwaniya|farwaniyah;al farwaniya
+R|KW-AH|KW|الأحمدي|Ahmadi|al ahmadi;ahmadi governorate
+R|KW-JA|KW|الجهراء|Jahra|al jahra;jahra governorate
+R|KW-MU|KW|مبارك الكبير|Mubarak Al-Kabeer|mubarak al kabeer;mubarak alkabeer
+P|district|KW-HA|السالمية|Salmiya|salmiyah;al salmiya
+P|district|KW-AH|الفحيحيل|Fahaheel|al fahaheel
+P|district|KW-AH|المنقف|Mangaf|al mangaf
+P|district|KW-AH|الفنطاس|Fintas|al fintas
+
+# ---------------------------------------------------------------- Qatar
+R|QA-DA|QA|الدوحة|Doha|doha city;ad dawhah
+R|QA-RA|QA|الريان|Al Rayyan|al rayyan;rayyan
+R|QA-WA|QA|الوكرة|Al Wakrah|wakra;al wakra
+R|QA-KH|QA|الخور|Al Khor|al khor;alkhor
+R|QA-US|QA|أم صلال|Umm Salal|umm salal;ام صلال
+R|QA-ZA|QA|الظعاين|Al Daayen|al daayen;dhaayen
+R|QA-SH|QA|الشمال|Al Shamal|al shamal;madinat al shamal
+P|district|QA-DA|اللؤلؤة|The Pearl|the pearl;pearl qatar;lusail pearl
+P|city|QA-ZA|لوسيل|Lusail|lusail city
+P|district|QA-DA|الوعب|Al Waab|al waab
+P|district|QA-DA|السد|Al Sadd|al sadd
+
+# ---------------------------------------------------------------- Bahrain
+R|BH-13|BH|المنامة|Manama|manama city;capital governorate bahrain
+R|BH-15|BH|المحرق|Muharraq|al muharraq
+R|BH-17|BH|المحافظة الشمالية|Northern Governorate|northern governorate bahrain
+R|BH-14|BH|المحافظة الجنوبية|Southern Governorate|southern governorate bahrain
+P|city|BH-14|الرفاع|Riffa|ar rifa;al riffa
+P|city|BH-17|مدينة حمد|Hamad Town|hamad town;madinat hamad
+P|city|BH-14|مدينة عيسى|Isa Town|isa town;madinat isa
+P|city|BH-15|سترة|Sitra|sitrah
+
+# ---------------------------------------------------------------- Oman
+R|OM-MA|OM|مسقط|Muscat|masqat;muscat governorate
+R|OM-ZU|OM|ظفار|Dhofar|dhofar governorate;zufar
+R|OM-BA|OM|شمال الباطنة|North Al Batinah|north batinah;al batinah north
+R|OM-BS|OM|جنوب الباطنة|South Al Batinah|south batinah;al batinah south
+R|OM-DA|OM|الداخلية|Ad Dakhiliyah|ad dakhiliyah;dakhiliyah
+R|OM-BU|OM|البريمي|Al Buraimi|buraimi;al buraymi
+R|OM-MU|OM|مسندم|Musandam|musandam governorate
+P|city|OM-ZU|صلالة|Salalah|salalah city
+P|city|OM-BA|صحار|Sohar|suhar
+P|city|OM-DA|نزوى|Nizwa|nazwa
+P|city|OM-MA|مطرح|Muttrah|mutrah;matrah
+P|city|OM-MA|السيب|Seeb|as seeb;al seeb

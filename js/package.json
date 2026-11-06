@@ -1,0 +1,15 @@
+{
+  "name": "arabic-address-parser",
+  "version": "0.1.0",
+  "description": "Normalize, parse and compare Arabic and Franco-Arabic addresses (Egypt and the Gulf). Zero dependencies.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./index.d.ts",
+  "exports": { ".": { "types": "./index.d.ts", "default": "./src/index.js" } },
+  "bin": { "arabic-address-parser": "./bin/cli.js" },
+  "files": ["src", "bin", "index.d.ts", "README.md"],
+  "scripts": { "test": "node --test" },
+  "engines": { "node": ">=18" },
+  "keywords": ["arabic", "address", "parser", "geocoding", "egypt", "gulf", "nlp"],
+  "license": "MIT"
+}
